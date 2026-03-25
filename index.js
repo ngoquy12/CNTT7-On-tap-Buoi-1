@@ -132,3 +132,15 @@ const inputTextElement = document.querySelector("#input-text");
 inputTextElement.addEventListener("input", (event) => {
   console.log("Input changed: ", event.target.value);
 });
+
+const btnShowElement = document.querySelector("#btn-show");
+const modalElement = document.querySelector("#modal");
+const btnCloseElement = document.querySelector("#btn-close");
+
+btnShowElement.addEventListener("click", () => {
+  modalElement.style.display = "block";
+});
+
+btnCloseElement.addEventListener("click", () => {
+  modalElement.style.display = "none";
+});
